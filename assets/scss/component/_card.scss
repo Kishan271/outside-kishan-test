@@ -1,0 +1,16 @@
+.card-sec {
+  font-size: rem-calc(12px);
+  color: #74788A;
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+  }
+
+  figure {
+    margin-bottom: rem-calc(8px);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 12px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+body {
+    background-color: #F2EFEE;    
+    font-family: $font-family-base;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $black;
+    }
+}
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'galaxie_copernicusbook';
+}
+
+
+h1 {
+    line-height: 1.1;
+    font-size: rem-calc(24px);
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem-calc(50px);
+    }
+
+    @include media-breakpoint-between(xl, xxl) {
+        font-size: 58px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: 64px;
+    }
+}
+
+h2 {
+    line-height: 1.2;
+    font-size: rem-calc(24px);
+
+    @include media-breakpoint-up(lg) {
+        font-size: 44px;
+    }
+}
+
+h3 {
+    line-height: 1.2;
+    font-size: rem-calc(20px);
+
+    @include media-breakpoint-up(lg) {
+        font-size: 32px;
+    }
+}
+
+
+/*section title css*/
+h2.section-title {
+    font-family: $font-family-inter;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: rem-calc(14px);
+    color: $theme-color;
+    margin-bottom: rem-calc(16px);
+
+    @include media-breakpoint-up(md) {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+}

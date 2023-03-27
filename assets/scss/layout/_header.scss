@@ -1,0 +1,33 @@
+.site-header {
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: rem-calc(20px) 0;
+
+        @include media-breakpoint-up(xl) {
+            padding: 22px 0;
+        }
+    }
+
+    &__social-icons {
+        display: flex;
+
+        li {
+            margin-left: rem-calc(20px);
+
+            @include media-breakpoint-up(xl) {
+                margin-left: 32px;
+            }
+
+            a {
+                color: #74788A;
+                
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import "vendors/bootstrap/functions";
+@import "vendors/bootstrap/variables";
+@import "bootstrap-custom";
+@import "vendors/bootstrap/mixins";
+
+// @import "bootstrap";
+
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/grid';
+
+@import 'component/fonts';
+@import 'component/card';
+
+@import 'layout/general';
+@import 'layout/header';
+
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/category';
+@import 'pages/blogs';
+@import 'pages/about';
+
+@import 'layout/footer';
